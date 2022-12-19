@@ -7,3 +7,5 @@
 !sublime-text/Packages/HTML/Snippets/**
 !sublime-text/Packages/C++/Snippets/**
 !sublime-text/Packages/sublime-profiles/Data/**
+
+!clangd/**

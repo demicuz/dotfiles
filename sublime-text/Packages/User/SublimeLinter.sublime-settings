@@ -1,0 +1,38 @@
+// SublimeLinter Settings - User
+{
+    "delay": 0.5,
+    "linters":
+    {
+        "norminette": {
+            "disable": true
+        },
+        "clang": {
+            "disable": true,
+            // "args": "-fvery-important"
+            "I": [
+                "${file_path}",
+                "${file_path}/include",
+                "${file_path}/libft",
+                "${folder}/include",
+                "/usr/local/include",
+            ],
+        },
+        "clang++": {
+            "disable": true,
+            // "args": "-falso-important"
+        },
+        "gcc": {
+            "disable": true,
+            "executable": ["gcc"],
+            // "args": ["-fsyntax-only", "-std=c90"],
+            // "args": ["-Wall", "-Werror", "-Wextra"],
+            "I": [
+                "${file_path}",
+                "${file_path}/include",
+                "${folder}/include",
+                "/usr/local/include",
+            ],
+            "excludes": [],
+        }
+    }
+}

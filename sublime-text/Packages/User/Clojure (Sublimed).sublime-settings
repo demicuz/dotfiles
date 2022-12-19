@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		"clj"
+	],
+	"tab_size": 2,
+	"sub_word_separators": "_-",
+	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
+}

@@ -1,0 +1,49 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Agila Theme",
+		"Alabaster Color Scheme",
+		"AlignTab",
+		"AppendSemiColon",
+		"BootstrapAutocomplete",
+		"Clojure Sublimed",
+		"Django",
+		"Django Syntax",
+		"Emmet",
+		"Executor",
+		"FileIcons Mono",
+		"fish",
+		"gruvbox",
+		"LSP",
+		"LSP-css",
+		"LSP-Deno",
+		"LSP-html",
+		"LSP-intelephense",
+		"LSP-json",
+		"LSP-pylsp",
+		"LSP-pyright",
+		"LSP-volar",
+		"MarkdownEditing",
+		"NeoVintageous",
+		"Package Control",
+		"Profile Switcher",
+		"Project Specific Syntax Settings",
+		"Sass",
+		"Sublime-Text-42-Headers",
+		"SublimeLinter",
+		"SublimeLinter-contrib-42-norminette",
+		"TOML",
+		"Tutkain",
+		"Vue Syntax Highlight",
+		"WakaTime",
+		"Writer Color Scheme",
+	],
+	"repositories":
+	[
+		"https://github.com/constintan/Sublime-Text-42-Headers"
+	],
+}

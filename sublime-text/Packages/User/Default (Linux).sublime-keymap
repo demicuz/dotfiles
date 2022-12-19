@@ -1,0 +1,180 @@
+[
+// { "keys": ["super+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+// { "keys": ["escape+h"], "command": "move", "args": {"by": "characters", "forward": false} },
+
+// Vintage
+{ "keys": ["escape"], "command": "single_selection", "context":
+    [
+        { "key": "num_selections", "operator": "not_equal", "operand": 1 },
+        { "key": "setting.command_mode", "operand": false }
+    ]
+},
+// {
+//     "keys": ["j", "k"],
+//     "command": "exit_insert_mode",
+//     "context":
+//     [
+//         { "key": "setting.command_mode", "operand": false },
+//         { "key": "setting.is_widget", "operand": false }
+//     ]
+// },
+
+// Clojure (Sublimed)
+{
+    "keys": ["ctrl+alt+enter"],
+    "command": "clojure_sublimed_eval",
+    "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+},
+{
+    "keys": ["ctrl+alt+i"],
+    "command": "clojure_sublimed_toggle_info",
+    "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+},
+
+// Tutkain
+// {
+//     "keys": ["ctrl+c", "ctrl+f"],
+//     "command": "tutkain_show_information",
+//     "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+// },
+// {
+//     "keys": ["ctrl+c", "ctrl+x"],
+//     "command": "tutkain_connect",
+//     "args": {"host": "localhost", "output": "view"}
+// },
+// Interrupt any ongoing evaluation.
+// {
+//     "keys": ["ctrl+c", "ctrl+r"],
+//     "command": "tutkain_interrupt_evaluation",
+//     "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure - source.clojure.clojurescript"}]
+// },
+// Evaluation
+// {
+//     "keys": ["ctrl+c", "ctrl+o"],
+//     "command": "tutkain_evaluate",
+//     "args": {"scope": "outermost"},
+//     "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+// },
+// {
+//     "keys": ["ctrl+c", "ctrl+i"],
+//     "command": "tutkain_evaluate",
+//     "args": {"scope": "innermost"},
+//     "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+// },
+// {
+//     "keys": ["ctrl+c", "ctrl+a"],
+//     "command": "tutkain_evaluate",
+//     "args": {"scope": "adjacent"},
+//     "context": [{"key": "selector", "operator": "equal", "operand": "source.clojure"}]
+// },
+
+// // Paredit
+// Key bindings for automatically keeping your parentheses balanced. You
+// {
+//     "keys": ["("],
+//     "command": "tutkain_paredit_open_round",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["["],
+//     "command": "tutkain_paredit_open_square",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["{"],
+//     "command": "tutkain_paredit_open_curly",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": [")"],
+//     "command": "tutkain_paredit_close_round",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["]"],
+//     "command": "tutkain_paredit_close_square",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["}"],
+//     "command": "tutkain_paredit_close_curly",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["\""],
+//     "command": "tutkain_paredit_double_quote",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["delete"],
+//     "command": "tutkain_paredit_forward_delete",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+
+// {
+//     "keys": ["backspace"],
+//     "command": "tutkain_paredit_backward_delete",
+//     "context": [
+//       {
+//         "key": "selector",
+//         "operator": "equal",
+//         "operand": "source.edn | source.clojure"
+//       }
+//     ]
+// },
+]

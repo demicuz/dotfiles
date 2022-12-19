@@ -1,0 +1,16 @@
+{
+	"show_diagnostics_panel_on_save": 0,
+	// "document_highlight_style": "fill",
+	"show_multiline_diagnostics_highlights": false,
+
+	"clients":
+	{
+		"clangd":
+		{
+			"enabled": true,
+			"command": ["clangd", "--header-insertion=never", "--clang-tidy"]
+		}
+	},
+	"diagnostics_additional_delay_auto_complete_ms": 1000,
+	// "show_inlay_hints": true,
+}

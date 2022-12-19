@@ -1,0 +1,24 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	},
+	"globals":
+	{
+	},
+	"rules":
+	[
+		{
+            "scope": "markup.highlight.text.lsp",
+            "background": "color(var(blue2) alpha(0.2))"
+        },
+        {
+            "scope": "markup.highlight.read.lsp",
+            "background": "color(var(green) alpha(0.2))"
+        },
+        {
+            "scope": "markup.highlight.write.lsp",
+            "background": "color(var(orange2) alpha(0.2))"
+        },
+	]
+}

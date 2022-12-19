@@ -2,6 +2,7 @@
 
 !*/
 !/.gitignore
+!bin/**
 !kitty/**
 !sublime-text/Packages/User/**
 !sublime-text/Packages/HTML/Snippets/**

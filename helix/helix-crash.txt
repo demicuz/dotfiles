@@ -1,0 +1,5 @@
+Trace:
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Char index out of bounds: char index 32916, Rope/RopeSlice char length 32773', /home/runner/.cargo/registry/src/github.com-1ecc6299db9ec823/ropey-1.5.0/src/slice.rs:349:41
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+I was following some stuff at tutor. Then replaced all occurrances with `%s`, pressed `,` (I think), and then presed `Ctrl+O`. And boom.

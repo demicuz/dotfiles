@@ -1,0 +1,8 @@
+theme = "autumn"
+
+[editor]
+line-number = "relative"
+auto-format = false
+color-modes = true
+auto-save = true
+bufferline = "multiple"

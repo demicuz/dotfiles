@@ -1,0 +1,49 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+
+# Keyboard bindings
+map ctrl+p nth_window -1
+map ctrl+c copy_and_clear_or_interrupt
+map ctrl+v paste_from_clipboard
+map kitty_mod+t new_tab_with_cwd
+map kitty_mod+enter new_window_with_cwd
+# map kitty_mod+n new_os_window_with_cwd
+
+# Font
+font_size 13.0
+font_family       JetBrains Mono
+bold_font         JetBrains Mono ExtraBold
+# bold_font         JetBrains Mono Bold Italic
+italic_font       JetBrains Mono Italic
+bold_italic_font  JetBrains Mono Bold Italic
+disable_ligatures always
+#font_family Hack
+
+# Cursor
+cursor_shape beam
+cursor_blink_interval 0
+
+# Terminal bell
+enable_audio_bell    no
+# visual_bell_duration 0.1
+# visual_bell_color #666666
+
+# Window layout
+# window_margin_width 6
+window_padding_width 1 1 6 1
+# placement_strategy top-left
+resize_debounce_time 0.0
+
+# Tab bar
+tab_bar_style slant
+tab_title_template "{index}: {title[title.rfind('/')+1:]}"
+# tab_title_template "{index}: {title}"
+
+# Colors
+# include colors.conf
+# include Broadcast.conf
+# include Mariana.conf
+
+# BEGIN_KITTY_THEME
+# Ayu
+include current-theme.conf
+# END_KITTY_THEME

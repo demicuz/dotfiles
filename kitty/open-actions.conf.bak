@@ -1,0 +1,3 @@
+protocol file
+mime text/plain
+action launch $EDITOR $FILE_PATH

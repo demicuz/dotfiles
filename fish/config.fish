@@ -9,6 +9,7 @@ if status is-interactive
     alias vim="nvim"
     alias v="nvim"
     alias neovide="neovide --multigrid"
+    alias ls="ls --hyperlink=auto"
 
     # OpenVPN aliases
     alias polytech_connect="openvpn3 session-start --config MoscowPolytech-pure.demicube@gmail.com.ovpn"

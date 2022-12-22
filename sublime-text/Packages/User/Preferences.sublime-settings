@@ -17,25 +17,7 @@
 		"LSP-Deno",
 		"LSP-pylsp",
 		"MarkdownEditing",
-		"NeoVintageous",
 		"Sublime-Text-42-Headers",
-		"Tutkain",
-		// "Vintage",
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Vintage",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
-/*"Tutkain",*/
 	],
 	"draw_white_space": ["selection", "isolated"],
 
@@ -50,9 +32,6 @@
 
 	// "hardware_acceleration": "opengl",
 
-	// Neovintageous
-	"neovintageous_build_version": 12700,
-	"vintageous_use_ctrl_keys": false,
 	"color_scheme": "Mariana.sublime-color-scheme",
 	"theme": "Adaptive.sublime-theme",
 }

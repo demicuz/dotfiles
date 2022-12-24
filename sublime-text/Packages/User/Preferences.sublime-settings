@@ -14,7 +14,6 @@
 
 	"ignored_packages":
 	[
-		"LSP-Deno",
 		"LSP-pylsp",
 		"MarkdownEditing",
 		"Sublime-Text-42-Headers",
@@ -32,6 +31,6 @@
 
 	// "hardware_acceleration": "opengl",
 
-	"color_scheme": "Mariana.sublime-color-scheme",
+	"color_scheme": "Alabaster Dark.sublime-color-scheme",
 	"theme": "Adaptive.sublime-theme",
 }

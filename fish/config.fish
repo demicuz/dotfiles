@@ -1,15 +1,19 @@
 if status is-interactive
-    alias ws="watch -n 0.5 sensors"
-    alias gdb="gdb --tui"
-    alias cl="printf '\033[2J\033[3J\033[1;1H'"
-    alias loc="tokei"
+    eval (batpipe)
 
+    alias ws="watch -n 0.5 sensors"
     # Usage: ctrlc your/document
     alias ctrlc="xclip -selection clipboard <"
+    # alias ls="ls --hyperlink=auto"
+
+    alias gdb="gdb --tui"
+    alias neovide="neovide --multigrid"
+
     alias vim="nvim"
     alias v="nvim"
-    alias neovide="neovide --multigrid"
-    # alias ls="ls --hyperlink=auto"
+    alias loc="tokei"
+
+    alias cl="printf '\033[2J\033[3J\033[1;1H'"
 
     # OpenVPN aliases
     alias polytech_connect="openvpn3 session-start --config MoscowPolytech-pure.demicube@gmail.com.ovpn"
@@ -23,13 +27,7 @@ if status is-interactive
     alias 21_disconnect="openvpn3 session-manage -c school21.ovpn -D"
     alias 21_stats="openvpn3 session-stats -c school21.ovpn"
     alias 21_log="openvpn3 log -c school21.ovpn"
-
 end
 
-set -gx DENO_INSTALL "/home/psharen/.deno"
-set -gx FLYCTL_INSTALL "/home/psharen/.fly"
-
-# pnpm
+set -gx EDITOR nvim
 set -gx PNPM_HOME "/home/psharen/.local/share/pnpm"
-set -gx PATH "$PNPM_HOME" $PATH
-# pnpm end

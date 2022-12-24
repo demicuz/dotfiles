@@ -12,3 +12,7 @@
 !clangd/**
 !fish/**
 !helix/**
+
+# TODO wat?
+fish/node_modules
+fish/package.json

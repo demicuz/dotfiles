@@ -8,7 +8,13 @@
 		"clangd":
 		{
 			"enabled": true,
-			"command": ["clangd", "--header-insertion=never", "--clang-tidy"]
+			// "command": ["clangd", "--header-insertion=never", "--clang-tidy"]
+			"command": ["clangd",
+				"--clang-tidy",
+				"--header-insertion=never",
+				"--fallback-style=google",
+				"--background-index", // TODO Does it do anything?
+			]
 		}
 	},
 	"diagnostics_additional_delay_auto_complete_ms": 1000,

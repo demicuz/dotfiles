@@ -1,6 +1,7 @@
 // SublimeLinter Settings - User
 {
     "delay": 0.5,
+    "lint_mode": "background",
     "linters":
     {
         "norminette": {

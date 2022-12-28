@@ -15,6 +15,7 @@
 		"Emmet",
 		"FileIcons Mono",
 		"fish",
+		"GLSL Validator",
 		"LSP",
 		"LSP-css",
 		"LSP-html",
@@ -22,6 +23,7 @@
 		"LSP-pyright",
 		"LSP-volar",
 		"MarkdownEditing",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Profile Switcher",
 		"Project Specific Syntax Settings",
@@ -29,6 +31,7 @@
 		"SublimeLinter",
 		"TOML",
 		"Vue Syntax Highlight",
+		"WakaTime",
 		"Writer Color Scheme",
 	],
 }

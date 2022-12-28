@@ -4,5 +4,6 @@ function man
     else
         set -gx MANWIDTH $COLUMNS
     end
-    command man --no-hyphenation --no-justification $argv
+    # command man --no-hyphenation --no-justification $argv
+    command batman --no-hyphenation --no-justification $argv
 end

@@ -11,11 +11,12 @@ if status is-interactive
 
     alias vim="nvim"
     alias v="nvim"
+    alias d="dolphin . & && disown"
     alias loc="tokei"
 
     alias cl="printf '\033[2J\033[3J\033[1;1H'"
 
-    # OpenVPN aliases
+    # VPN aliases
     alias polytech_connect="openvpn3 session-start --config MoscowPolytech-pure.demicube@gmail.com.ovpn"
     alias polytech_disconnect="openvpn3 session-manage -c MoscowPolytech-pure.demicube@gmail.com.ovpn -D"
     alias polytech_stats="openvpn3 session-stats -c MoscowPolytech-pure.demicube@gmail.com.ovpn"
@@ -27,6 +28,9 @@ if status is-interactive
     alias 21_disconnect="openvpn3 session-manage -c school21.ovpn -D"
     alias 21_stats="openvpn3 session-stats -c school21.ovpn"
     alias 21_log="openvpn3 log -c school21.ovpn"
+
+    alias mc="mullvad connect"
+    alias md="mullvad disconnect"
 end
 
 set -gx EDITOR nvim

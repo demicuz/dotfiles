@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Without ANSI escape codes
+# sed -e $'s#^\(.*\:[[:digit:]]\+:[[:digit:]]\+\)#\e]8;;subl:\/\/'`pwd`/$'\\1\a\\1\e]8;;\a#'
+
+# With ANSI escape codes. Outputs correct links, but breaks formatting. To lazy to figure out how to fix.
+sed -e $'s#^.*K\(.*\:[[:digit:]]\+:[[:digit:]]\+\)#\e]8;;subl:\/\/'`pwd`/$'\\1\a\\1\e]8;;\a#'
+
+# Use another test protocol, meh. Because I don't know how to delete them!
+# sed -e $'s#^.*K\(.*\:[[:digit:]]\+:[[:digit:]]\+\)#\e]8;;sublime:\/\/'`pwd`/$'\\1\a\\1\e]8;;\a#'

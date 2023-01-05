@@ -4,7 +4,7 @@ if status is-interactive
     alias ws="watch -n 0.5 sensors"
     # Usage: ctrlc your/document
     alias ctrlc="xclip -selection clipboard <"
-    # alias ls="ls --hyperlink=auto"
+    alias ls="ls --color=always --hyperlink=auto"
 
     alias gdb="gdb --tui"
     alias neovide="neovide --multigrid"

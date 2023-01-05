@@ -2,6 +2,9 @@
 // { "keys": ["super+h"], "command": "move", "args": {"by": "characters", "forward": false} },
 // { "keys": ["escape+h"], "command": "move", "args": {"by": "characters", "forward": false} },
 
+// Profile Switcher
+{ "keys": ["ctrl+alt+s"], "command": "toggle_profile"},
+
 // Vintage
 { "keys": ["escape"], "command": "single_selection", "context":
     [

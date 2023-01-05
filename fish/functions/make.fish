@@ -4,4 +4,5 @@
 
 function make
     command make $argv 2>| gcc-sublime-links
+    return $pipestatus[1]
 end

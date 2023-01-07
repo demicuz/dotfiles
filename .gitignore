@@ -6,7 +6,7 @@
 !kitty/**
 !sublime-text/Packages/User/**
 !sublime-text/Packages/HTML/Snippets/**
-!sublime-text/Packages/C++/Snippets/**
+!sublime-text/Packages/C++/**
 !sublime-text/Packages/sublime-profiles/Data/**
 
 !clangd/**

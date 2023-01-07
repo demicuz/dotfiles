@@ -8,6 +8,27 @@
 	},
 	"rules":
 	[
+        {
+            "scope": "comment.line.banner.c",
+            "foreground": "orange",
+        },
+		{
+            "scope": "comment.todo",
+            "foreground": "var(orange2)",
+            "font_style": "italic"
+            // "foreground": "color(yellow alpha(0.8))",
+            // "background": "color(var(blue2) alpha(0.5))"
+        },
+        {
+            "scope": "comment.fixme",
+            "foreground": "var(red)",
+            "font_style": "italic"
+        },
+        {
+            "scope": "comment.note",
+            "foreground": "var(green)",
+            "font_style": "italic"
+        },
 		{
             "scope": "markup.highlight.text.lsp",
             "background": "color(var(blue2) alpha(0.2))"

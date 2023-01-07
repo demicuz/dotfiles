@@ -92,6 +92,15 @@ contexts:
         - match: '(\\)$\n'
           captures:
             1: punctuation.separator.continuation.c
+        - match: '(\bTODO[O]*\b)'
+          captures:
+            1: comment.todo
+        - match: '(\bFIXME[E]*\b)'
+          captures:
+            1: comment.fixme
+        - match: '(\bNOTE\b)'
+          captures:
+            1: comment.note
         - match: \n
           pop: true
 

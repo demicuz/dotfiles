@@ -10,8 +10,10 @@
 		"AppendSemiColon",
 		"BootstrapAutocomplete",
 		"Clojure Sublimed",
+		"CMake",
 		"Django",
 		"Django Syntax",
+		"DoxyDoxygen",
 		"Emmet",
 		"FileIcons Mono",
 		"fish",
@@ -33,5 +35,6 @@
 		"Vue Syntax Highlight",
 		"WakaTime",
 		"Writer Color Scheme",
+		"Zeal",
 	],
 }

@@ -2,7 +2,8 @@
 	"show_diagnostics_panel_on_save": 0,
 	// "document_highlight_style": "fill",
 	"show_multiline_diagnostics_highlights": false,
-
+	"popup_max_characters_width": 80,
+	"lsp_format_on_save": true,
 	"clients":
 	{
 		"clangd":

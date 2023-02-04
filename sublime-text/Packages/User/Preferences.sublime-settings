@@ -1,36 +1,71 @@
 {
-	// "show_panel_on_build": false,
-
-	"font_size": 13,
+	"show_panel_on_build": false,
+	"font_size": 12,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
+	// "font_face": "Source Code Pro",
 	// "font_face": "FiraCode Nerd Font",
-	// "font_face": "JetBrains Mono NL",
+	"font_face": "JetBrains Mono NL",
 	// "font_face": "Fragment Mono",
-	"font_face": "JetBrains Mono",
+	// "font_face": "JetBrains Mono",
 	// "font_options": ["no_liga", "no_clig", "no_calt"],
 	"scroll_context_lines": 2,
 	"save_on_focus_lost": true,
-
-	"ignored_packages":
-	[
+	"ignored_packages": [
 		"LSP-pylsp",
 		"MarkdownEditing",
 		"Sublime-Text-42-Headers",
+		"Vintage",
 	],
-	"draw_white_space": ["selection", "isolated"],
-
-	"rulers": [80],
-
+	"draw_white_space": [
+		"selection",
+		"isolated"
+	],
+	"rulers": [
+		80
+	],
 	"auto_complete_delay": 100,
-	"file_exclude_patterns": ["*.idx", "*.d", "*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", ".directory", "desktop.ini", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
-	"folder_exclude_patterns": [".cache", "node_modules", ".svn", ".git", ".hg", "CVS", ".Trash", ".Trash-*"],
+	"file_exclude_patterns": [
+		"*.gcda",
+		"*.gcno",
+		"*.idx",
+		"*.d",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		".directory",
+		"desktop.ini",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns": [
+		".cache",
+		"node_modules",
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		".Trash",
+		".Trash-*"
+	],
 	"trim_trailing_white_space_on_save": "not_on_caret",
-
 	"vintage_use_clipboard": true,
-
 	// "hardware_acceleration": "opengl",
-
 	"color_scheme": "Mariana.sublime-color-scheme",
 	"theme": "Adaptive.sublime-theme",
 }

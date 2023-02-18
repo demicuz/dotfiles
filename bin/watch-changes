@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# https://github.com/sdaschner/dotfiles/blob/master/bin/watch-changes
+
+if [ "$1" ] && [ "$2" ]
+then
+    while true
+    do
+        inotifywait -r $1
+        $2
+    done
+else
+    echo "usage: watch-changes <file> <command>"
+fi

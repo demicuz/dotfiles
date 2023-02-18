@@ -35,3 +35,8 @@ end
 
 set -gx EDITOR nvim
 set -gx PNPM_HOME "/home/psharen/.local/share/pnpm"
+
+# pnpm
+set -gx PNPM_HOME "/home/psharen/.local/share/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end

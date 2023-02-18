@@ -1,5 +1,5 @@
 {
-	"show_panel_on_build": false,
+	"show_panel_on_build": true,
 	"font_size": 12,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
@@ -15,6 +15,7 @@
 		"LSP-pylsp",
 		"MarkdownEditing",
 		"Sublime-Text-42-Headers",
+		"Tailwind CSS Autocomplete",
 		"Vintage",
 	],
 	"draw_white_space": [

@@ -1,4 +1,5 @@
 {
+	"auto_upgrade": false,
 	"bootstrapped": true,
 	"in_process_packages":
 	[
@@ -19,7 +20,9 @@
 		"FileIcons Mono",
 		"fish",
 		"GLSL Validator",
+		"Hungry Backspace",
 		"LSP",
+		"LSP-clangd",
 		"LSP-css",
 		"LSP-html",
 		"LSP-json",
@@ -27,6 +30,7 @@
 		"LSP-tailwindcss",
 		"LSP-volar",
 		"MarkdownEditing",
+		"MarkdownPreview",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Profile Switcher",

@@ -5,6 +5,7 @@ if status is-interactive
     # Usage: ctrlc your/document
     alias ctrlc="xclip -selection clipboard <"
     alias ls="ls --color=always --hyperlink=auto"
+    alias mn="mv -vn"
 
     alias gdb="gdb --tui"
     alias neovide="neovide --multigrid"
@@ -13,6 +14,8 @@ if status is-interactive
     alias v="nvim"
     alias d="dolphin . & && disown"
     alias loc="tokei"
+
+    alias git-graph="git log --graph --pretty=format:\"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>%Creset\" --abbrev-commit --all"
 
     alias cl="printf '\033[2J\033[3J\033[1;1H'"
 

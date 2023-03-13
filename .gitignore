@@ -9,6 +9,7 @@
 !sublime-text/Packages/C++/**
 !sublime-text/Packages/Python/**
 !sublime-text/Packages/sublime-profiles/Data/**
+!sublime-text/Packages/Copy Cut and Paste Lines/**
 
 !clangd/**
 !fish/**

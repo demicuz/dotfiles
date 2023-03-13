@@ -1,0 +1,9 @@
+[
+    // { "keys": ["ctrl+c"], "command": "ccpl_copy" },
+    // { "keys": ["ctrl+x"], "command": "ccpl_cut" },
+    // { "keys": ["ctrl+v"], "command": "ccpl_paste" },
+    // { "keys": ["ctrl+shift+d"], "command": "ccpl_duplicate" },
+    { "keys": ["ctrl+alt+c"], "command": "ccpl_copy" },
+    { "keys": ["ctrl+alt+x"], "command": "ccpl_cut" },
+    { "keys": ["ctrl+alt+v"], "command": "ccpl_paste" }
+]

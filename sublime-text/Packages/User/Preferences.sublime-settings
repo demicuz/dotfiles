@@ -1,5 +1,6 @@
 {
-	"show_panel_on_build": true,
+	"show_panel_on_build": false,
+	"auto_complete": false,
 	"font_size": 12,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,

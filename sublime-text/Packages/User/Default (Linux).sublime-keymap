@@ -2,6 +2,15 @@
 // { "keys": ["super+h"], "command": "move", "args": {"by": "characters", "forward": false} },
 // { "keys": ["escape+h"], "command": "move", "args": {"by": "characters", "forward": false} },
 
+// My Home/End keys are mapped to fn+left/right, and PageUp/PageDown to fn+up/down
+{ "keys": ["ctrl+home"], "command": "prev_view" },
+{ "keys": ["ctrl+end"], "command": "next_view" },
+{ "keys": ["ctrl+pageup"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+{ "keys": ["ctrl+pagedown"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+
+{ "keys": ["ctrl+shift+v"], "command": "paste" },
+{ "keys": ["ctrl+v"], "command": "paste_and_indent" },
+
 // Profile Switcher
 { "keys": ["ctrl+alt+s"], "command": "toggle_profile"},
 

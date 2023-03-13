@@ -1,0 +1,6 @@
+// Settings in here override those in "LSP-clangd/LSP-clangd.sublime-settings"
+{
+	"initializationOptions": {
+		"clangd.clang-tidy": true
+	}
+}

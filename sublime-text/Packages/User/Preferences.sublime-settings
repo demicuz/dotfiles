@@ -1,7 +1,8 @@
 {
 	"show_panel_on_build": false,
-	"auto_complete": false,
+	"auto_complete": true,
 	"font_size": 12,
+	"line_numbers": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	// "font_face": "Source Code Pro",
@@ -15,13 +16,10 @@
 	"ignored_packages": [
 		"LSP-pylsp",
 		"MarkdownEditing",
+		"Origami",
 		"Sublime-Text-42-Headers",
 		"Tailwind CSS Autocomplete",
 		"Vintage",
-	],
-	"draw_white_space": [
-		"selection",
-		"isolated"
 	],
 	"rulers": [
 		80

@@ -3,20 +3,26 @@
 	// "document_highlight_style": "fill",
 	"show_multiline_diagnostics_highlights": false,
 	"popup_max_characters_width": 80,
-	"lsp_format_on_save": true,
-	"clients":
-	{
-		"clangd":
-		{
+	"lsp_format_on_save": false,
+	"clients": {
+		"zig": {
 			"enabled": true,
-			// "command": ["clangd", "--header-insertion=never", "--clang-tidy"]
-			"command": ["clangd",
-				"--clang-tidy",
-				"--header-insertion=never",
-				"--fallback-style=google",
-				"--background-index", // TODO Does it do anything?
-			]
+			"command": [
+				"zls"
+			],
+			"selector": "source.zig"
 		}
+		// "clangd":
+		// {
+		// 	"enabled": true,
+		// 	// "command": ["clangd", "--header-insertion=never", "--clang-tidy"]
+		// 	"command": ["clangd",
+		// 		"--clang-tidy",
+		// 		"--header-insertion=never",
+		// 		"--fallback-style=google",
+		// 		"--background-index", // TODO Does it do anything?
+		// 	],
+		// },
 	},
 	"diagnostics_additional_delay_auto_complete_ms": 1000,
 	// "show_inlay_hints": true,

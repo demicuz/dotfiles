@@ -16,6 +16,7 @@
 !helix/**
 
 !styles/**
+!git/gitignore
 
 # TODO wat?
 fish/node_modules

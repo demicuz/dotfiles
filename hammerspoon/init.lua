@@ -1,6 +1,6 @@
 -- hyperKey = {'shift', 'control', 'option', 'command'}
--- hyperKey = {'esc'}
-hyperKey = {'option'}
+-- hyperKey = {'esc'} doesn't work :(
+hyperKey = {"option"}
 
 -- reload config
 hs.hotkey.bind(hyperKey, "r", function()
@@ -8,15 +8,16 @@ hs.hotkey.bind(hyperKey, "r", function()
 end)
 
 appShortcutMap = {
-  f = 'Firefox',
-  t = 'TiMe',
-  k = 'kitty',
-  s = 'Sublime Text',
-  o = 'Obsidian',
-  i = 'IntelliJ IDEA',
-  m = 'Sublime Merge',
-  p = 'Postman',
+  t = "TiMe",
+  s = "Sublime Text",
+  i = "IntelliJ IDEA",
+  m = "Sublime Merge",
+  p = "Postman",
 }
+
+appShortcutMap["1"] = "Firefox"
+appShortcutMap["2"] = "Obsidian"
+appShortcutMap["3"] = "kitty"
 
 for k, v in pairs(appShortcutMap) do
   hs.hotkey.bind(hyperKey, k, function()
@@ -35,7 +36,7 @@ local layouts = hs.keycodes.layouts()
 local currentLayoutIndex = 1
 
 function switchLayout()
-    currentLayoutIndex = currentLayoutIndex % #layouts + 1 
+    currentLayoutIndex = currentLayoutIndex % #layouts + 1
     hs.keycodes.setLayout(layouts[currentLayoutIndex])
 end
 

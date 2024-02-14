@@ -1,3 +1,5 @@
+require("hs.ipc")
+
 -- hyperKey = {'shift', 'control', 'option', 'command'}
 -- hyperKey = {'esc'} doesn't work :(
 hyperKey = {"option"}
@@ -12,12 +14,14 @@ appShortcutMap = {
   s = "Sublime Text",
   i = "IntelliJ IDEA",
   m = "Sublime Merge",
-  p = "Postman",
+  b = "Bruno",
+  k = "Толк",
 }
 
 appShortcutMap["1"] = "Firefox"
 appShortcutMap["2"] = "Obsidian"
 appShortcutMap["3"] = "kitty"
+appShortcutMap["4"] = "Finder"
 
 for k, v in pairs(appShortcutMap) do
   hs.hotkey.bind(hyperKey, k, function()
@@ -36,8 +40,13 @@ local layouts = hs.keycodes.layouts()
 local currentLayoutIndex = 1
 
 function switchLayout()
-    currentLayoutIndex = currentLayoutIndex % #layouts + 1
-    hs.keycodes.setLayout(layouts[currentLayoutIndex])
+    -- currentLayoutIndex = currentLayoutIndex % #layouts + 1
+    -- hs.keycodes.setLayout(layouts[currentLayoutIndex])
+    if hs.keycodes.currentLayout() == "ABC" then
+      hs.keycodes.setLayout("Russian – PC")
+    else
+      hs.keycodes.setLayout("ABC")
+    end
 end
 
 hs.hotkey.bind("command", "space", switchLayout)

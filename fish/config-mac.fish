@@ -18,6 +18,7 @@ if status is-interactive
     abbr -a -- gcm 'git checkout master'
     abbr -a -- gs 'git status'
     abbr -a -- gp 'git pull --ff-only'
+    # https://superuser.com/a/546900/1044054, https://askubuntu.com/a/318211
     abbr -a -- recent-files 'gfind . -type f -not -path "*/.*" -printf "%T@ %Tc %p\n" | sort -rn | cut -d" " -f2- | head -n 30'
 
     abbr -a --position anywhere -- gst 'git stash'

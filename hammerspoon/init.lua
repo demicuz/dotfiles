@@ -1,4 +1,4 @@
-require("hs.ipc")
+require("hs.ipc") -- todo maybe remove this?
 
 -- hyperKey = {'shift', 'control', 'option', 'command'}
 -- hyperKey = {'esc'} doesn't work :(
@@ -15,7 +15,7 @@ appShortcutMap = {
   i = "IntelliJ IDEA",
   m = "Sublime Merge",
   b = "Bruno",
-  k = "Толк",
+  k = "Толк"
 }
 
 appShortcutMap["1"] = "Firefox"
@@ -51,5 +51,45 @@ end
 
 hs.hotkey.bind("command", "space", switchLayout)
 
--- hs.hotkey.bind("option", "l", function() hs.keycodes.setLayout("ABC") end)
--- hs.hotkey.bind("option", "n", function() hs.keycodes.setLayout("Russian") end)
+-- Tile windows
+for key, rect in pairs({
+  ["Q"] = {x = 0, y = 0, w = 0.5, h = 0.5},
+  ["W"] = {x = 0, y = 0, w = 1, h = 0.5},
+  ["E"] = {x = 0.5, y = 0, w = 0.5, h = 0.5},
+  ["A"] = {x = 0, y = 0, w = 0.5, h = 1},
+  ["S"] = {x = 0, y = 0, w = 1, h = 1},
+  ["D"] = {x = 0.5, y = 0, w = 0.5, h = 1},
+  ["Z"] = {x = 0, y = 0.5, w = 0.5, h = 0.5},
+  ["X"] = {x = 0, y = 0.5, w = 1, h = 0.5},
+  ["C"] = {x = 0.5, y = 0.5, w = 0.5, h = 0.5}
+}) do
+  hs.hotkey.bind({"⌃", "⌥", "⌘"}, key, function()
+    hs.window.focusedWindow():move(rect, nil, true)
+  end)
+end
+
+-- Send window to another monitor
+hs.hotkey.bind({"⌃", "⌥", "⌘"}, "tab", function()
+    hs.window.focusedWindow():moveToScreen(
+        hs.window.focusedWindow():screen():next(), true, true)
+end)
+
+-- Dark mode
+
+hs.hotkey.bind({"⌃", "⌥", "⌘"}, "return", function()
+    hs.osascript.applescript(
+        [[tell application "System Events" to tell appearance preferences to set dark mode to ]] ..
+            (select(2, hs.osascript.applescript(
+                        [[tell application "System Events" to tell appearance preferences to return dark mode]])) and
+                "false" or "true"))
+end)
+
+-- Go to sleep
+hs.hotkey.bind({"⌘", "⌃"}, "s", function()
+  hs.caffeinate.systemSleep()
+end)
+
+-- Spoons
+anycomplete = hs.loadSpoon("Anycomplete")
+anycomplete.engine = "duckduckgo"
+anycomplete.bindHotkeys()

@@ -5,5 +5,5 @@ function man
         set -gx MANWIDTH $COLUMNS
     end
     # command man --no-hyphenation --no-justification $argv
-    command batman --no-hyphenation --no-justification $argv
+    command batman $argv
 end

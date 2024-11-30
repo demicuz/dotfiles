@@ -11,6 +11,7 @@
 !sublime-text/Packages/sublime-profiles/Data/**
 !sublime-text/Packages/Copy Cut and Paste Lines/**
 !hammerspoon/**
+!alt-tab/**
 
 !clangd/**
 !fish/**
